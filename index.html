@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px; /* Limit max width */
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: inline-block;
+            color: #333;
+        }
+
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="number"]:focus, input[type="text"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #predictionResult {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        #storeBlockchainBtn {
+            display: none;
+            background-color: #007BFF;
+        }
+
+        #storeBlockchainBtn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Prediction Analysis</h1>
+        
+        <div class="form-group">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName">
+        </div>
+
+        <div class="form-group">
+            <label for="investmentPrice">Investment Price:</label>
+            <input type="number" id="investmentPrice">
+        </div>
+
+        <div class="form-group">
+            <label for="marketTrend">Market Trend (1-100):</label>
+            <input type="number" id="marketTrend">
+        </div>
+
+        <div class="form-group">
+            <label for="riskFactor">Risk Factor (1-100):</label>
+            <input type="number" id="riskFactor">
+        </div>
+
+        <div class="form-group">
+            <label for="economicIndicators">Economic Indicators (1-100):</label>
+            <input type="number" id="economicIndicators">
+        </div>
+
+        <button id="predictBtn">Predict Investment</button>
+
+        <!-- Show prediction result -->
+        <p id="predictionResult"></p>
+        
+        <h2>Live Data:</h2>
+        <div>
+            <p>Stock Price: <span id="stockPrice"></span></p>
+        </div>
+
+        <!-- Add a button to store prediction on blockchain -->
+        <button id="storeBlockchainBtn">Store on Blockchain</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+abi:
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			}
+		],
+		"name": "getPrediction",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "predictions",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "stockPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "marketTrend",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "riskFactor",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "economicIndicators",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "predictionResult",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "stockPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "marketTrend",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "riskFactor",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "economicIndicators",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "predictionResult",
+				"type": "string"
+			}
+		],
+		"name": "storePrediction",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
+
+contract address:
+0x407560ce8e379ad247aa4013cd6a8522442cf8f8
